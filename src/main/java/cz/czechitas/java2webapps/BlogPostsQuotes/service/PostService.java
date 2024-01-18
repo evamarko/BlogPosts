@@ -1,18 +1,13 @@
-package cz.czechitas.java2webapps.ukol7.service;
+package cz.czechitas.java2webapps.BlogPostsQuotes.service;
 
-import cz.czechitas.java2webapps.ukol7.entity.Post;
-import cz.czechitas.java2webapps.ukol7.repository.PostRepository;
-
-import java.time.LocalDate;
-import java.util.List;
-import java.util.Optional;
-
+import cz.czechitas.java2webapps.BlogPostsQuotes.entity.Post;
+import cz.czechitas.java2webapps.BlogPostsQuotes.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
 
 @Service
 public class PostService {
@@ -25,7 +20,7 @@ public class PostService {
     }
 
     public Page<Post> list() {
-        return postRepository.findByPublishedBeforeOrderByPublished(LocalDate.now(), PageRequest.of(0, 20));
+        return postRepository.findByPublishedBeforeOrderByPublished(LocalDate.now(), PageRequest.of(0, 5));
     }
 
     public Post singlePost(String slug) {

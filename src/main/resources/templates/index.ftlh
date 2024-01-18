@@ -1,15 +1,15 @@
 [#ftl]
 
-[@c.page title="Seznam postů"]
-    <h1>Seznam postů</h1>
+[@c.page title="Post List"]
+    <h1>Post List</h1>
     [#list posts.content]
         <table class="table">
             <thead>
             <tr>
-                <th scope="col">Titulek</th>
-                <th scope="col">Perex</th>
-                <th scope="col">Datum publikování</th>
-                <th scope="col">Autor</th>
+                <th scope="col">Title</th>
+                <th scope="col">Best Quote</th>
+                <th scope="col">Published</th>
+                <th scope="col">Author</th>
                 <th scope="col"></th>
             </tr>
             </thead>
@@ -21,14 +21,14 @@
                         <td>${post.perex?no_esc}</td>
                         <td>${post.published?date}</td>
                         <td>${post.author}</td>
-                        <td><a href="/post/${post.slug}">Přečíst</a></td>
+                        <td><a href="/post/${post.slug}">More Quotes</a></td>
                     [/#if]
                 </tr>
             [/#items]
             </tbody>
         </table>
     [#else]
-        <p class="fst-italic">Seznam postů je prázdný.</p>
+        <p class="fst-italic">Post List is empty.</p>
     [/#list]
 [/@c.page]
 

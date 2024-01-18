@@ -1,4 +1,4 @@
-package cz.czechitas.java2webapps.ukol7;
+package cz.czechitas.java2webapps.BlogPostsQuotes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

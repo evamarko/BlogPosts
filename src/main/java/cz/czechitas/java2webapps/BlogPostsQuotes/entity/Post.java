@@ -1,13 +1,10 @@
-package cz.czechitas.java2webapps.ukol7.entity;
+package cz.czechitas.java2webapps.BlogPostsQuotes.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 

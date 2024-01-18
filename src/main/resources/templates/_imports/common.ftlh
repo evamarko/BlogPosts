@@ -1,6 +1,6 @@
 [#ftl]
 
-[#macro page title="Můj blog"]
+[#macro page title="Blog Posts Quotes"]
     <!doctype html>
     <html lang="cs">
     <head>
