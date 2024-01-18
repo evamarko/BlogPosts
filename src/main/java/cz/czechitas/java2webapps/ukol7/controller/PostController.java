@@ -27,10 +27,10 @@ public class PostController {
         return new ModelAndView("/index").addObject("posts", postService.list());
     }
 
-    @GetMapping("/post/{slug}")
+    /*@GetMapping("/post/{slug}")
     public ModelAndView detail(@PathVariable String slug) {
         ModelAndView modelAndView = new ModelAndView("/detail");
         modelAndView.addObject("post", postService.singlePost(slug));
         return modelAndView;
-    }
+    }*/
 }
